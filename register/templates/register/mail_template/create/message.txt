@@ -1,0 +1,9 @@
+{{ user.email }} Gracias por completar el procedimiento de registro de membresía.
+
+Continúe registrándose como miembro después de acceder al sitio desde la URL a continuación.
+Tenga en cuenta que el proceso de registro de membresía aún no se ha completado.
+
+Para registro regular URL
+{{ protocol}}://{{ domain }}{% url 'register:user_create_complete' token %}
+
+Honalara

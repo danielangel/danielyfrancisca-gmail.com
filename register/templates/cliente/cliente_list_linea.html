@@ -1,0 +1,48 @@
+{% extends 'register/base.html' %}
+
+{% block content %}
+<table class="table table-bordered">
+    <head>
+        <tr>
+            <h4>Otorgamiento</h4>
+        </tr>
+    </head>
+    <tbody>
+        {% if object_list %}
+        {% for cliente in object_list %}
+
+        
+        <form action="/action_page.php">
+            <tbody><tr class="t6des"> 
+                <table style="width:100%">
+                    <tr>
+                      <th>Nro.Oper.</th>
+                      <th>Fecha Oper.</th> 
+                      <th>Tipo Docto.</th>
+                      <th>Cant. Docto.</th>
+                      <th>Monto Docto.</th>
+                      <th>Monto Financiado</th>
+                    </tr>
+                    <tr>
+                      <span  class="txttit" align="left" >{{idoperencurso}}</span> 
+                      <td>{{FechaOper}}</td>
+                      <td>{{Documento}}</td>
+                      <td>{{CantDoctos}}</td>
+                      <td>{{ValTotOper}}</td>
+                      <td>{{Anticipable}}</td>
+                    </tr>
+                  </table>
+                </tbody>
+
+
+          
+         
+            {% endfor %}
+            {% else %}
+                <h1> No hay registro de cliente</h1>
+            {% endif %}   
+    
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,8 @@
+{{ user.email }} Me gusta
+
+Acceda al sitio desde la siguiente URL y restablezca su contraseña.
+
+ReajusteURL
+{{ protocol}}://{{ domain }}{% url 'register:password_reset_confirm' uid token %}
+
+OMEGA FACTORING

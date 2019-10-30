@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+/*	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+}
+
+.menu_bar {
+	display: none;
+	font-family: arial;
+}
+
+header {
+/*	max-width: 1275px;
+	min-width: 850px;*/
+	width: 100%;
+	background: #fff;
+	padding: 0px 0px;
+	display: block;
+}
+
+header .image {
+	width: 110px;
+	float: left;
+	margin: 5px 15px auto 50px;
+	border-radius: 7px;
+
+}
+
+header nav {
+	background: #fff;
+	z-index: 1000;
+	max-width: 585px;
+	width: 100%;
+	margin: 0px 0px 0px auto;
+/*	padding: 0px;*/
+
+}
+
+header nav ul {
+	list-style: none;
+}
+header nav ul #home {
+	background: #ECF0F1;
+	color: #000;
+}
+
+header nav ul #home a:hover {
+	color: #000;
+	font-size: 1.3em;
+	padding: 36px 12px;
+}
+
+header nav ul li {
+	display: inline-block;
+	position: relative;
+	margin: 0px -2px;
+}
+
+header nav ul li:hover {
+	color: #000; 
+}
+
+header nav ul li a {
+	color: #000;
+	display: inline-block;
+	text-decoration: none;
+	padding: 40px 12px;
+	font-size: 1em;
+	font-family: arial;
+	margin: 0px;
+}
+
+
+header nav ul li .link:hover {
+	/*color: #000;*/
+	font-size: 1.3em;
+	padding: 36px 12px;
+}
+
+header nav ul li a span {
+	margin-right: 8px;
+}
+
+header nav ul li:hover .children {
+	display: block;
+}
+
+header nav ul li .children {
+	display: none;
+	background: #011826;
+	position: absolute;
+	width: 250px;
+	z-index: 10000;
+}
+
+header nav ul li .children li {
+	display: block;
+	overflow: hidden;
+	z-index: 15000;
+/*	border-bottom: 1px solid rgba(255,255,255,.5);*/
+}
+ 
+header nav ul li .children li a {
+	display: block;
+	font-size: 1em;
+	font-family: arial;
+	transition: 2s;
+}
+
+header nav ul li .children li a:hover {
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a span{
+	float: right;
+	position: relative;
+	top: 3px;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top: 3px;
+	margin-left: 10px;
+	margin-right: 0px; 
+}
+
+
+@media screen and (max-width: 850px) {
+	body {
+		padding-top: 75px;
+	}
+
+	header {
+		padding: 0;
+	}
+
+	header .image {
+		display: none;
+	}
+
+	.menu_bar {
+		display: block;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		background: rgba(0,14,155,1);
+		z-index: 10000;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		overflow: hidden;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 35px;
+	}
+
+	header nav {
+		width: 60%;
+		top: 75px;
+		height: calc(100% - 80px);
+		position: fixed;
+		right: 100%;
+		margin: 0px;
+		z-index: 10000;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		text-align: center;
+		border-bottom: 1px solid rgba(255,255,255,.5)
+	}
+
+	header nav ul li a {
+		display: block;
+		padding-left: 20px; 
+		text-align: center;
+	}
+	header nav ul li a span {
+		margin-right: 12px;
+	}
+}
+

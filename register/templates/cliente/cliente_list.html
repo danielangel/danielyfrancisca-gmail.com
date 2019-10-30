@@ -1,0 +1,74 @@
+{% extends 'register/base.html' %}
+
+{% block content %}
+<table class="table table-bordered">
+    <head>
+        <tr>
+            <h4>Información del Cliente</h4>
+        </tr>
+    </head>
+    <tbody>
+        {% if object_list %}
+        {% for cliente in object_list %}
+
+        
+        <form action="/action_page.php">
+            <tbody><tr class="t6des"> 
+                    <td colspan="3" >&nbsp;&nbsp;&nbsp;Información Cliente</td>
+                </tr>
+                <tr class="t1va1"> 
+                    <td  width="214"></td><p class="txttit" align="right">Rut&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                    <td> 
+                        <span  class="txttit" align="left" >{{ cliente.rut}}-{{ cliente.dv}}</span>
+                     </td>
+                </tr>
+                <tr class="t1va3"> 
+                     <td  width="214"> <p class="txttit" align="right">Razón Social&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                    <td>                   
+                        <span  class="txttit" align="left" >{{ cliente.rsocial}}</span>
+                    </td>
+                </tr>
+                <tr class="t1va3"> 
+                    <td width="214" class="style2"><p class="txttit" align="right">Dirección&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                    <td class="style2"> 
+                        <span  class="txttit" align="left" >{{ cliente.direccion}}</span> 
+                    </td>
+                </tr>
+                <tr class="t1va3"> 
+                    <td  width="214"> <p class="txttit" align="right">Comuna&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                    <td>
+                         <span  class="txttit" align="left" >Santiago</span> 
+                    </td>
+                </tr>
+                <tr class="t1va3"> 
+                    <td  width="214"><p class="txttit" align="right">Teléfono&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                    <td> 
+                         <span  class="txttit" align="left" >{{ cliente.telefono}}</span> 
+                    </td>
+                </tr>
+                <tr class="t1va3"> 
+                    <td  width="214"><p class="txttit" align="right">Correo Electrónico&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                    <td>
+                         <span  class="txttit" align="left">{{ cliente.email}}</span> 
+                    </td>
+                </tr>
+                <tr class="t1va3"> 
+                        <td  width="214"><p class="txttit" align="right">Ejecutivo&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                        <td>
+                             <span  class="txttit" align="left">{{ cliente.Ejecutivo}}</span> 
+                        </td>
+                    </tr>
+                </tbody>
+
+
+          
+         
+            {% endfor %}
+            {% else %}
+                <h1> No hay registro de cliente</h1>
+            {% endif %}   
+    
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+
+.ir-arriba {
+	padding:20px;
+	display:inline-block;
+	background:#000E9B;
+	color:#fff;
+	position: fixed;
+	font-size:24px;
+	bottom:20px;
+	right:20px;
+	display:none;
+	cursor:pointer;
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+	.ir-arriba {
+		padding:17px;
+		position: fixed;
+		font-size:17px;
+		bottom:15px;
+		right:15px;
+}

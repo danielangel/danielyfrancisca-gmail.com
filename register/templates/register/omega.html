@@ -1,0 +1,478 @@
+
+{% block content %}
+    <header class="header">
+        <div class="barra">
+            <div class="container ">
+                <nav class="navbar navbar-dark  justify-content-between navbar-expand-lg bg-transparent">
+                    <a class="navbar-brand" href="#">Precisión <span>Financiera</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav w-100 justify-content-end">
+                                <li class="nav-item">
+                                    <li class="nav-item">
+                                        <a class="btn btn-success" href="#" role="button">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="btn btn-success" href="nosotros.html" role="button"  >Nosotros</a>
+                                   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-success" href="{% url 'register:top' %}" role="button">Servicios</a>
+                                    
+                                </li>
+                                <div class="dropdown">
+                                        
+                                        <button class="btn btn-success" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Acceder
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        </button>
+                                        </button>
+                                          <button class="dropdown-item" onclick="location.href='http://www.omegafactoring.cl'" type="button">Mis Cuentas</button>
+                                          <button class="dropdown-item" type="button">Ceder Factura</button>
+                                          <button class="dropdown-item" type="button">Receder Factura</button>
+                                        </div>
+                                      </div>
+                                <li class="nav-item">
+                                     <a class="btn btn-success" href="#contact" role="button">Contacto</a>
+                            </ul>
+                    </div>
+                </nav>
+            </div> <!--.container-->
+        </div><!--.barra-->
+
+            <div id="flechas" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                   
+                      <div class="carousel-item active" 
+                      opacity= "2";>
+                        <img class="d-block w-100" src="img/foto4pro.jpg"  alt="First slide"  >
+                        <div class="container ">
+                                <div class="row justify-content-between">
+                                        <div class="col-md-6">
+                                                <div class="carousel-caption d-none d-md-block text-left">
+                                                    <h3></h3>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-6 ">
+                                                <div class="carousel-caption d-none d-md-block bloque-info">
+                                                    <h2>Consigue liquidez para tu empresa en menor tiempo</h2>
+                                                    
+                                                    <p></p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div style="text-align: center"><img src="img/logo6.jpg" width="220" /></div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/foto3pro.jpg" >
+                        <div class="col-md-6">
+                        <div class="carousel-caption d-none d-md-block bloque-info">
+                            <h2>¡Tenemos lo que su empresa necesita!</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div style="text-align: center"><img src="img/logo6.jpg" width="220" /></div>
+            </div>
+  <div class="carousel-item">
+        <img class="d-block w-100" src="img/foto5pro.jpg" >
+        <div class="col-md-6">
+        <div class="carousel-caption d-none d-md-block bloque-info text-center">
+                <div  style="margin-left: 120%;margin-right: -100%">
+             <h2> ¡Tenemos un equipo humano especializado  </h2>
+             <h2>  para atender sus necesidades!  </h2>
+        </div>
+    </div>
+</div>
+<div style="text-align: center"><img src="img/logo2.jpg" width="220" /></div>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#flechas" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#flechas" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+            </div>
+        </div>
+    </br>
+</br>
+</br>
+    </header>
+
+      <!-- Contact Section 
+
+      <section class="page-section" id="contact">
+        <div class="container">
+          <h2 class="text-center mt-0">    </h2>
+          <hr class="divider my-4">
+          <div class="row">
+                <section class="page-section" id="contact">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <h2 class="mt-0">Mantengamos el contacto</h2>
+                            <p> </p>
+                            <p> </p>
+                            <p> </p>
+                            <p> </p>
+                        </div>
+                              <hr class="divider my-4">
+                              <p class="text-muted mb-5">Omega Factoring S.A. | Félix de Amesti 124 Of 21-22, Las Condes</p>
+                            
+                          </div>
+                          <div class="row">
+                            
+                              <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                              <div>+56 2 2306 1900</div>
+                            </div>
+                        </div>
+
+                            <div class="col-lg-4 mr-auto text-center">
+                              <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                              <!-- Make sure to change the email address in anchor text AND the link below! 
+                              <a class="d-block" href="mailto:contacto@omegafactoring.cl">contacto@omegafactoring.cl</a>
+                            </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                      </section>
+                      <hr class="divider my-4">
+                      <div class="row"></div>
+                      
+                      <hr class="divider my-4">
+                      <div class="row"></div>
+                      <hr class="divider my-4">
+                      <div class="row"></div>
+                      <hr class="divider my-4"> 
+                      <div class="row"></div>
+                      <hr class="divider my-4">
+                      <div class="row"></div>
+                      <hr class="divider my-4">
+                      <div class="row"></div>
+                      <hr class="divider my-4">
+                      <div class="row"></div>
+                      <hr class="divider my-4"> 
+                      </div>  
+                    </div>
+                  </div>
+                </section>
+                      <section class="page-section" id="services">
+                                    <h3 href="#" class="btn btn-warning text-uppercase d-block text-center mt5">NOSOTROS</h3>
+                                    <title>Ejemplo 1 - Columnas m�ltiples en CSS3 - campusMVP.es</title>
+                               
+                                </head>
+                                <body>
+                                    <main>
+                                            <div class="nosotros mt5"> 
+                                                    <div class="row align-items-center text-light">
+                                                            <div class="col"> 
+                                            <div class="sobre-nosotros"> 
+                                                    <div class="row align-items-center text-light">
+                                                            <div class="col">  
+                                        <h3 class="card-title ">HISTORIA</h3>
+                                        
+                                        <h3>Son dos los grandes motivos que hacen que se cree Omega Factoring S.A.:</h3>
+                                                <h3>La vasta experiencia de sus ejecutivos, tanto a nivel nacional como internacional y el gran respaldo de sus socios, en términos de patrimonio y liquidez económica.
+                                             Nuestro trabajo básicamente está orientado a financiar el capital de trabajo para pequeñas y medianas empresas, con el objetivo de transformarnos en socios financieros de nuestros clientes.
+                                
+                                        Es por eso que operamos con un equipo de expertos ejecutivos, que cuentan con una gran experiencia en la industria del factoring doméstico, y que además, son pioneros en el desarrollo de este mercado en nuestro país.
+                                        En Omega Factoring S.A contamos con un mix de productos financieros, completamente adaptables a las necesidades de cada cliente. Porque nuestra visión apunta a satisfacer las necesidades financieras de nuestros clientes, ofrecemos un servicio exclusivo y con soluciones innovadoras, con el fin de alcanzar el éxito en el financiamiento y desarrollo de cada empresa.</h3>
+                                         -->       
+                                                    <div style="margin:2cm"><img src="img/logo2.jpg" width="220" />
+
+                                    </main>
+                                </body>
+                                </html>  
+                             
+                                   
+           
+
+            
+            <hr class="divider my-4">
+            <section class="page-section" id="services2">
+                    <main class="container mt-5"></main>
+            <h1 class="text-center mb-5" >Qué es el Factoring?<h3>
+                    <h3>   
+            <div class="nosotros-precio mt5"> 
+                    <div class="container"> 
+                    <div class="row align-items-center text-light">
+                            <div class="col"> 
+                                     
+                                            <div class="row align-items-center text-light">
+            
+                    <div class="navbar-brand">
+                            <div class="col">  
+                                    <br>
+                                    <br>
+                <div class="sobre-nosotros-precio">
+
+            <h3 class="text-left mb-5">Es la forma más simple y efectiva de obtener liquidez para su empresa<h3>
+           
+            <h3> Factoring es la operación de descuento de documentos por cobrar a un determinado plazo.
+            <h3>   Por lo tanto usted tiene la posibilidad de liquidar anticipadamente sus cuentas por cobrar,
+                    <h3>   expresadas en facturas, cheques, letras, pagarés y cualquier otro título mercantil. 
+                            <h3> Omega Factoring S.A. atiende en forma ágil y oportuna todos sus requerimientos destinados a anticipar
+                                    <h3>  los flujos de sus cuentas por cobrar, otorgándole liquidez y ocupándose adicionalmente de la cobranza 
+                                            <h3>  de sus facturas, letras y otros documentos representativos de crédito a su haber.
+                                                    <h3>La forma de operar es a través de una cesión del Cliente a Omega Factoring de documentos tales como:
+                                                            <h3> facturas, cheques, letras, etc., a quien se le anticipa un porcentaje del monto de los mismos documentos 
+                                                                    <h3>  hasta la fecha de su vencimiento real, obteniendo de esta forma liquidez en el mismo día.-->
+                                      
+           
+         
+      </section>
+  <section class="page-section" id="services1">
+    <main class="container mt-5">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+    </h2>
+</br>
+</br>
+</br>
+        <div class="row sobre-nosotros-servi">
+                    <div class="imagen col-sm-3 text-center">
+                <img  src="img/dinero.gif" alt="icono seguridad" class="img-fluid mb-4" >
+                <h3 class="text-uppercase mb-2">Seguridad</h3>
+                <p>Liquidez inmediata para su negocio.Convierte a 1 día el plazo promedio de pago.</p>
+            </div>
+            <div class="imagen col-sm-3 text-center">
+                <img src="img/calendario1.gif" alt="icono seguridad" class="img-fluid mb-4" >
+                <h3 class="text-uppercase mb-3">Cobranza profesional</h3>
+                <p>Gestión de cobranza en manos de una empresa experta..Ahorra tiempo y costos en la cobranza a tus clientes</p>
+            </div>
+            <div class="imagen col-sm-3 text-center">
+                <img src="img/flecha.gif" alt="icono seguridad" class="img-fluid mb-4" >
+                <h3 class="text-uppercase mb-3">Productos financieros adaptables</h3>
+                <p>Satisfacemos las necesidades financieras de nuestros clientes.Accede a financiemiento respaldado solo con tus cuentas por cobrar. </p>
+            </div>
+            <div class="imagen col-sm-3 text-center">
+                <img src="img/graficos.gif" alt="icono seguridad" class="img-fluid mb-4" >
+                <h3 class="text-uppercase mb-3">Mejora los indices financieros</h3>
+                <p>Moviliza activos inmovilizados como facturas, pagarés, cheques.Amplía tus opciones de financiciamiento.</p>
+          
+        
+    </main>
+
+    <section class="container mt-5">
+
+    </br>
+</br>  
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+        <h2 class="text-center mb-5">Requisitos</h2>
+
+        <div class="row anuncios">
+            <div class="col-md-6">
+                    <div class="card imagen1" >
+                        <img class="card-img-top" src="img/empresa4.jpg" alt="Anuncio casa en venta">
+                        <div class="card-body">
+                            <h3 class="card-title">Empresas</h3>
+                            <p class="card-text">Antecedentes Financieros</p>
+                            <hr class="divider my-4">
+                     
+                            <P TD style="line-height:.5">-Carpeta Tributaria últimos 24 meses</p>
+                            <P TD style="line-height:.5">- Últimos dos balances tributarios</p>
+                            <P TD style="line-height:.5"> -Últimas dos declaraciones de renta
+                            <hr class="divider my-4">
+                            <p class="card-text">Antecedentes Legales
+                            <hr class="divider my-4">
+                            <p>-Escritura de Constitución de Sociedad</p>
+                            <p TD style="line-height:1">-Extracto Inscrito y Publicado en el diario Oficial, con anotaciones marginales y vigencia no superior a 30 días.</p>
+                            <p TD style="line-height:1">-Poderes Vigentes</p>
+                            <p TD style="line-height:1">-Copia de Escrituras, Inscripciones y Publicaciones de las modificaciones de la Sociedad.</p>
+                            <p TD style="line-height:1">-Fotocopia del Rut de la Sociedad</p>
+                            <p TD style="line-height:1">-Fotocopia de las cédulas de identidad de los representantes legales de la sociedad.</p>
+                            <hr class="divider my-4">
+                            <p class="card-text">Antigüedad mínima de 1 año.</p>
+
+                            <p class="card-precio"></p>
+
+                            <ul class="card-descripcion my-3 list-unstyled d-flex justify-content-between">    
+                                    <li><img src="img/archivadores1.jpg">  </li>
+                            </ul>
+                        </div>
+                    </div><!--.card-->
+            </div> <!--.col-md-4-->
+            <div class="col-md-6">
+                    <div class="card imagen1">
+                        <img class="card-img-top" src="img/persona5.jpg" alt="Anuncio casa en venta">
+                        <div class="card-body">
+                            <h3 class="card-title">Personas Naturales</h3>
+                            <p class="card-text">Antecedentes Financieros</p>
+                            <hr class="divider my-4">
+                            <p TD style="line-height:.5">-Carpeta Tributaria últimos 24 meses</p>
+                            <p TD style="line-height:.5">-Últimos dos balances tributarios</p>
+                            <p TD style="line-height:.5">-Últimas dos declaraciones de renta
+                            <hr class="divider my-4">
+                            <p class="card-text">Antecedentes Legales
+                                            <hr class="divider my-4">
+                            <p class="card-text">-Cédula de identidad</p>
+                            <p class="divider my-4">
+                            <p class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <hr class="divider my-4">
+                            <ul class="card-descripcion my-3 list-unstyled d-flex justify-content-between">    
+                                    <li><img src="img/documento1.jpg">  </li>
+                            </ul>
+      
+                        </div>
+                    </div><!--.card-->
+            </div> <!--.col-md-4-->
+           
+                    </div><!--.card-->
+            </div> <!--.col-md-4-->
+
+
+        </div><!--.row-->
+    </section><!--.container-->
+   
+
+    <section class="encuentra mt-5">
+        
+        <div class="container">
+            <div class="row align-items-center text-light">
+                <div class="col">
+                    <p>QUIERO SER CONTACTADO POR UN EJECUTIVO</p>
+                    <p></p>
+                    <a href="#contact" class="btn btn-warning text-uppercase py-2 mt-4">Contactános</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="text-center mb-5">Nuestro Blog</h2>
+                <div class="row entrada mb-4">
+                    <div class="col-sm-5 imagen2">
+                        <img src="img/anuncio1.jpg" alt="entrada blog" class="img-fluid">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="my-2">¿QUIENES INTERVIENEN EN UNA OPERACION DE FACTORING?</p>
+                        <p class="meta">
+                            Escrito el: <span>25/8/2018</span>  por: <span>Admin</span>
+                        </p>
+                        <p>En los últimos años, los servicios de factoring han estado ganando terreno en Chile, especialmente a través de la cesión de facturas por medios electrónicos. Esto se debe a que aportan grandes beneficios tanto a pequeñas como medianas empresas, permitiéndoles contar con liquidez en pocos día... </p>
+                        <a href="#" class="btn btn-success">Leer más</a>
+                    </div>
+                </div> <!--.entrada-->
+                <div class="row entrada">
+                    <div class="col-sm-5">
+                        <img src="img/an.png" alt="entrada blog" class="img-fluid">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="my-2">QUÉ ES Y POR QUÉ ES TAN IMPORTANTE LA LIQUIDEZ</p>
+                        <p class="meta">
+                            Escrito el: <span>20/5/2017</span>  por: <span>Admin</span>
+                        </p>
+                        <p>La liquidez es la capacidad de una compañía para obtener dinero en efectivo y de esta forma hacer frente a sus obligaciones </p>
+                        <a href="#" class="btn btn-success">Leer más</a>
+                    </div>
+                </div> <!--.entrada-->
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-center mb-5">Noticias</h2>
+                <div class="testimoniales p-5">
+                        
+                        <div id="testimoniales" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner text-light">
+                                    <div class="carousel-item active">
+                                        <p class="testimonial-texto">
+                                                "El pasado 16 de mayo entraron en vigor las primeras cláusulas de la nueva Ley Pago a 30 Días aplicables a todas las empresas en Chile. ¿Te estás preparando bien para hacerles frente"
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <p class="testimonial-texto">
+                                                Una de las preocupaciones más grandes para toda persona que realice actividades remuneradas es su relación con el Servicio de Impuestos Internos."
+                                            <span class="d-block text-right mt-4"> - Persona 2</span>
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <p class="testimonial-texto">
+                                                Llegar a quedar sin liquidez en una empresa puede traer consecuencias tan graves como el deterioro y posterior quiebre del negocio.”
+                                            <span class="d-block text-right mt-4"> - Persona 3</span>
+                                        </p>
+                                    </div>
+                            </div>
+                        </div><!--#testimoniales-->
+                </div>
+            </div>
+    
+ 
+                <div class="Ubicacion"><br>
+                    <!-- <h3>Ubicación</h3><br> -->
+                    <div style="text-align: center"></div>
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6660.616056556283!2d-70.5865352575707!3d-33.41521284858338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf18ecead0dd%3A0x7c288af824c85936!2sF%C3%A9lix%20de%20Amesti%20124%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1568043675706!5m2!1ses!2scl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div><br>
+					<h3>Mas Información</h3><br>
+					<span class="icon-phone"></span> Telefono: 22 306 19 00 <br>
+					<span class="icon-mobile"></span> Celular: 56 9 7646 2319 <br>
+					<span class="icon-mail4"></span> Correo: operaciones@omegafactoring.cl <br>
+					<span class="icon-table2"></span> Horario: lunes a viernes de 09:00 - 18:00 <br>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<footer>
+      
+		<div class="contactos">
+			<a href="#" target="_blank" class="icon-facebook"></a>
+			<a href="#" target="_blank" class="icon-twitter"></a>
+			<a href="#" target="_blank" class="icon-whatsapp"></a>
+		</div>
+		<div class="copyright">
+			<p><span class="derechos">&copy; Omega Factoring S.A.</span>|<a href="#acercade" class="AcercaDe">2019. Derechos Reservados</a></p>
+        </div>
+        
+    
+                <div class="row py-4 align-items-center">
+                    <ul class="nav col  flex-column flex-sm-row text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Acceder</a>
+                      </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#contact">Contacto</a>
+
+ 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+   
+
+    {% endblock %}

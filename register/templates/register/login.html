@@ -1,0 +1,34 @@
+{% extends "register/base.html" %}
+{% block content %}
+
+
+<div class="row">
+    <!-- Lado izquierdo, área de inicio de sesión-->
+    <div class="card col-md-6">
+            <img class="mb-4" src="static/img/logo8.png" alt="" width="100">
+        <div class="card-body">
+            <form action="{% url 'register:login' %}" method="POST">
+                    
+                {{ form.non_field_errors }}
+                {% for field in form %}
+                    {{ field }}
+                    {{ field.errors }}
+                    <hr>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary" >Iniciar sesión</button>
+                <input type="hidden" name="next" value="{{ next }}" />
+                {% csrf_token %}
+            </form>
+        </div>
+    </div><!--A la izquierda, el área de inicio de sesión ha terminado -->
+
+    <!-- Lado derecho, área de registro de miembros -->
+    <div class="card col-md-6">
+        <div class="card-body">
+            <a href="{% url 'register:user_create' %}" class="btn btn-primary"    >Registro de Cliente </a><hr>
+            <a href="{% url 'register:password_reset' %}" class="btn btn-primary" >Olvidé mi contraseña</a>
+        </div>
+    </div><!-- Fin del área de registro de membresía a la derecha -->
+</div>
+
+{% endblock %}

@@ -1,0 +1,379 @@
+* {
+	padding: 0;
+	margin: 0px;
+}
+
+body {
+	background-color: #FFF;  /*#ECF0F1*/
+	font-family: arial;
+}
+
+.container {
+	width: 100%;
+}
+
+.container .acercade {
+	margin-top: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.container .acercade .acerca {
+	width: calc(100% - 30px);
+	padding: 10px 15px 15px 15px;
+	background-color: rgba(0,14,155,.9);
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.container .introduccion {
+	width: 70%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.container .imagetext {
+	width: 100%;
+}
+
+.container .imagetext .row1{
+	width: 100%;
+	height: 450px;
+}
+
+.container .imagetext .row1 > img{
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+
+.container .imagetext .row1 .articles {
+	width: 50%;
+	float: left;
+	background-color: rgba(8,192,255,.3);
+	height: 100%;
+}
+
+.container .imagetext .row1 .articles > article {
+	width: 85%;
+	margin: 24px auto 0px auto;
+}
+
+.container .imagetext .row1 .articles > article input[type="button"]{
+	border: none;
+	background: #0002D3;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+}
+
+.container .imagetext .row1 .articles > article input[type="button"]:hover {
+	background: rgba(0,0,0,0);
+	color: #000;
+	box-shadow: inset 0 0 0 3px #000;
+}
+
+.container .imagetext .row2{
+	width: 100%;
+	height: 450px;
+}
+
+.container .imagetext .row2 > img{
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+.container .imagetext .row2 .articles {
+	width: 50%;
+	float: left;
+	background-color: rgba(8,192,255,.3);
+	height: 100%;
+}
+
+.container .imagetext .row2 .articles > article {
+	width: 85%;
+	margin: 24px auto 0px auto;
+}
+
+.container .imagetext .row2 .articles > article input[type="button"]{
+	border: none;
+	background: #0002D3;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+}
+
+.container .imagetext .row2 .articles > article input[type="button"]:hover {
+	background: rgba(0,0,0,0);
+	color: #000;
+	box-shadow: inset 0 0 0 3px #000;
+}
+
+hr {
+    border: 0;
+    margin: 10px auto;
+    width: 60%;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.container .div {
+	width: 100%;
+	margin: 40px auto;
+}
+
+.container .div h2 {
+	
+	width: 235px;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.container .projects {
+	width: 100%;
+
+}
+
+.container .projects .imagen {
+	width: 25%;
+	float: left;
+	margin-bottom: 40px;
+/*	background-color: #ff8000;*/
+
+}
+
+.container .projects .imagen img {
+	width: 100%;
+}
+
+.container .presentacion {
+	width: 100%;
+	margin: 15px auto;
+}
+
+.container .presentacion .video {
+	width: 50%;
+	margin: 10px auto;
+}
+
+.container .presentacion .video video{
+	width: 100%;
+}
+
+.container .catalogo {
+	width: 100%;
+	margin: 10px auto;
+	margin-bottom: 20px;
+
+}
+
+.container .catalogo .productos {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.container .catalogo .productos .producto {
+	width: 23%;
+	margin: 0px 1%;
+	float: left;
+	background-color: rgba(8,192,255,.3);
+	margin-bottom: 40px;
+}
+
+.container .catalogo .productos .producto .text{
+	width: 90%;
+	margin: 5px auto;
+
+}
+
+.container .catalogo .productos .producto h3 {
+	text-align: center;
+}
+
+.container .catalogo .productos .producto a {
+	text-align: center;
+	text-decoration: none;
+	color: #000E9B;
+}
+
+.container .catalogo .productos .producto a:hover{
+	text-decoration: underline;
+}
+
+.container .catalogo .productos .producto img{
+	width: 100%;
+}
+
+.container .info-contacto {
+	margin-top: 20px;
+	width: 100%;
+	clear: both;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+.container .info-contacto .infotext {
+	width: calc(100% - 40px);
+	padding: 20px;
+	background-color: rgba(0,14,155,.9);
+	color: #fff;
+}
+
+.container .info-contacto .moreinfo {
+	width: 100%;
+/*	background-color: rgba(8,192,255,.3);*/
+	margin: 0px auto 0px auto;
+	display: inline-block;
+}
+
+.container .info-contacto .moreinfo .formulario {
+	width: calc(50% - 30px);
+	padding: 15px;
+	float: left;
+
+}
+
+.container .info-contacto .moreinfo .textarea {
+	width: 80%;
+	height: 175px;
+	margin: 5px auto;
+	padding-left: 10px;
+	font-size: 1em;
+	outline: none;
+	background-color: #c0c0c0;
+}
+
+.container .info-contacto .moreinfo input[type="text"], input[type="email"]{
+	width: 80%;
+	height: 38px;
+	margin: 5px auto;
+	padding-left: 10px;
+	font-size: 1em;
+	outline: none;
+	background-color: #c0c0c0;
+	border: none;
+}
+
+.container .info-contacto .moreinfo input[type="submit"]{
+	margin: 10px margin: 5px auto;
+	width: 80%;
+	height: 45px;
+	background: #024959;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 5px;
+	border: none;
+}
+
+.container .info-contacto .moreinfo input[type="submit"]:hover { 
+	background: #037e8c;
+}	
+
+.container .info-contacto .moreinfo .ubicacion {
+	width: calc(50% - 30px);
+	float: left;
+	padding: 15px;
+	height: 100%;
+	color: #000;
+}
+.container .info-contacto .moreinfo .ubicacion span{
+ 	margin-right: 20px;
+}
+
+.container .info-contacto .moreinfo .maps {
+	margin-right: 5px;
+}
+
+footer {
+	margin-top: 20px;
+	color: #fff;
+	clear: both;
+	padding: 20px 0px 0px 0px;
+	text-align: center;
+	background-color: rgba(0,14,155,.9);
+}
+
+footer .contactos {
+	width: 250px;
+	height: 50px;
+	margin: 10px auto;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+footer .contactos a {
+	text-decoration: none;
+	color: #fff;
+	margin: 10px;
+}
+
+footer .contactos .icon-facebook {
+	font-size: 2em;
+	padding: 12px;
+	border-radius: 50%;
+	transition:all 800ms ease;
+	float: left;
+}
+
+footer .contactos .icon-facebook:hover {
+	text-decoration: none;
+	background: #3b5998;
+}
+
+footer .contactos .icon-twitter {
+	font-size: 2em;
+	padding: 12px;
+	border-radius: 50%;
+	transition:all 800ms ease;
+	float: left;
+}
+
+footer .contactos .icon-twitter:hover {
+	background: #00abf0;
+	text-decoration: none;
+}
+
+footer .contactos .icon-whatsapp {
+	font-size: 2em;
+	padding: 12px;
+	border-radius: 50%;
+	transition:all 800ms ease;
+	float: left;
+}
+
+footer .contactos .icon-whatsapp:hover {
+	background: #00cc00;
+	text-decoration: none;
+}
+
+footer .copyright{
+	margin: 0px;
+	width: 100%;
+	background-color: rgba(8,192,255,.3);
+	padding: 17px 0px;
+}
+
+footer .copyright p {
+	margin-right: 15px;
+}
+
+footer .copyright p a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	margin-left: 15px;
+}
+
+footer .copyright .derechos {
+	margin-right: 15px;
+}

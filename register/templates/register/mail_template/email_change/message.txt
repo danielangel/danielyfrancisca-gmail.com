@@ -1,0 +1,5 @@
+Cuando accede al sitio desde la siguiente URL, se completa el cambio de dirección de correo electrónico.
+
+{{ protocol}}://{{ domain }}{% url 'register:email_change_complete' token %}
+
+OMEGA FACTORING

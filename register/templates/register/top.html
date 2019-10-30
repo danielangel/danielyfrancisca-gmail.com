@@ -1,0 +1,16 @@
+{% extends 'register/base.html' %}
+{% load static %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    {% include 'register/omega.html' %}
+{% else %}
+
+{% endif %}
+{% endblock %} 
+
+
+
+
+
+
